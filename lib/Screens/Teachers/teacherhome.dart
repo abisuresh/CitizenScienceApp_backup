@@ -10,6 +10,14 @@ class TeacherHome extends StatelessWidget{
       appBar: AppBar(
         title: Text("Home")
       ),
+      body: Center(
+        child: RaisedButton(
+          onPressed: (){
+            Navigator.pop(context);
+          },
+          child: Text("Sign Out")
+        )
+      )
         );
   }
 }
